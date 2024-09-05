@@ -1,6 +1,5 @@
 from merchant import Merchant
 from langchain_ollama import ChatOllama
-from langchain_core import ConversationChain
 
 npc_inventory = [
     {
@@ -31,7 +30,6 @@ npc = Merchant(inventory=npc_inventory)
 llm = ChatOllama(model="mistral", num_ctx=16384, temperature=0.5).bind_tools(npc.tools)
 
 def chat_llm():
-    cchain = ConversationChain()
     chain = npc.prompt | llm
     message = ""
     while(not message == "exit"):
