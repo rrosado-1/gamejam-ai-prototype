@@ -6,8 +6,7 @@ Must download ollama. [Available here.](https://github.com/ollama/ollama)
 
 Once downloaded you will have to download "mistral" with command ```ollama pull mistral```. And then run it with ```ollama run mistral```.
 
-Once that is done, install all pip dependencies and you can run with
-python source/llm.py
+Once that is done, install all pip dependencies and you can run with ```python source/llm.py```
 
 ## Sample Interaction
 
